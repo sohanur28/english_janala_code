@@ -112,15 +112,17 @@
 
     <!-- Open the modal using ID.showModal() method -->
     <!-- <button class="btn" onclick="my_modal_2.showModal()">open modal</button> -->
-    
-    <dialog id="my_modal_2" class="modal">
+
+    <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
         <div class="modal-box">
-            <h3 class="text-lg font-bold">Hello!</h3>
-            <p class="py-4">Press ESC key or click outside to close</p>
+            <div id="details-container" class="space-y-5">
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">close</button>
+                </form>
+            </div>
         </div>
-        <form method="dialog" class="modal-backdrop">
-            <button>close</button>
-        </form>
     </dialog>
 
     <script src="./script/index.js"></script>
